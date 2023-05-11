@@ -17,7 +17,7 @@ function Menu(){
           <Link to="/CrearProducto" class="nav-link">CrearProducto</Link>
         </li>
         <li class="nav-item">
-        <Link to="/VerTenis" class="nav-link">Ver Tenis</Link>
+        <Link to="/VerTenis" class="nav-link">Ver catalogo</Link>
         </li>
         <li class="nav-item">
         <Link to="/ActualizarStock" class="nav-link">Actualizar Stock</Link>
