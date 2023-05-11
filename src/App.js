@@ -10,6 +10,9 @@ function App() {
           <Menu>
             <Routes>
               <Route exact path="/"></Route>
+              <Route path="/CrearProducto"></Route>
+              <Route path="/VerTenis"></Route>
+              <Route path="/ActualizarStock"></Route>
             </Routes>
           </Menu>
         </Router>

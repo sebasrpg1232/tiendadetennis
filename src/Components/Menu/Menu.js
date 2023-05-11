@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Menu(){
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,16 +11,16 @@ function Menu(){
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <Link to="/" class="nav-link">Inicio</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Crear Producto</a>
+          <Link to="/CrearProducto" class="nav-link">CrearProducto</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ver Tennis</a>
+        <Link to="/VerTenis" class="nav-link">Ver Tenis</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Actualizar Stock</a>
+        <Link to="/ActualizarStock" class="nav-link">Actualizar Stock</Link>
         </li>
       </ul>
     </div>
