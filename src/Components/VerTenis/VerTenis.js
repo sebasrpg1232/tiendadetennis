@@ -14,7 +14,7 @@ function VerTenis (){
             <tbody>
              <tr>
                 <th scope="row">1</th>
-                 <td>Los naik del seba</td>
+                 <td>Los naik del martin</td>
                  <td>verde biche fosforescente</td>
                  <td>90</td>
                  <td>10 peso</td>

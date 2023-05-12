@@ -4,7 +4,7 @@ function Tarjetas (props){
             <div>
                 <img className="estiloImg"
                 src = {require (`../../Imagenes/tarjeta${props.img}.jpg`)}
-                alt = "Imagen Zapato"
+                alt = "Imagen  Zapato"
                 />
                 <h2>{props.titulo}</h2>
                 <p>{props.precio}</p>
