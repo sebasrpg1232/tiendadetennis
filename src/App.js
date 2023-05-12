@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Menu from "./Components/Menu/Menu";
 import Home from "./Components/Home/Home";
 import CrearProducto from "./Components/CrearProducto/CrearProducto";
 import VerTenis from "./Components/VerTenis/VerTenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Tarjetas from "./Components/Tarjetas/Tarjetas";
 function App() {
   return (
     <div className="App">
@@ -19,6 +19,12 @@ function App() {
             </Routes>
         </Router>
       </nav>
+      {/* <Tarjetas
+      img = "1"
+      titulo = "Tenis Forum Exhibit Low"
+      precio = "$499.950"
+      detalle = "Tenis clásicos inspirados en el básquet con un look a cuadros."
+      /> */}
     </div>
   );
 }

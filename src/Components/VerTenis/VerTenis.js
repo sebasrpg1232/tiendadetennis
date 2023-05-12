@@ -18,6 +18,7 @@ function VerTenis (){
                  <td>verde biche fosforescente</td>
                  <td>90</td>
                  <td>10 peso</td>
+                 <button type="button" class="btn btn-secondary">Secondary</button>
              </tr>
             </tbody>
           </table>
