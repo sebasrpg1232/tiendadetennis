@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import CrearProducto from "./Components/CrearProducto/CrearProducto";
 import VerTenis from "./Components/VerTenis/VerTenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ActualizarStock from "./Components/ActualizarStock/ActualizarStock"
 import Tarjetas from "./Components/Tarjetas/Tarjetas";
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
               <Route exact path="/" element={<Home/>}></Route> 
               <Route path="/CrearProducto" element={<CrearProducto/>}></Route>
               <Route path="/VerTenis" element={<VerTenis/>}></Route>
-              <Route path="/ActualizarStock" element={<CrearProducto/>}></Route>
+              <Route path="/ActualizarStock" element={<ActualizarStock/>}></Route>
             </Routes>
         </Router>
       </nav>
