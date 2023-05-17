@@ -23,7 +23,7 @@ function Menu(){
         <Link to="/ActualizarStock" class="nav-link">Actualizar Stock</Link>
         </li>
       </ul>
-    </div>
+    </div> 
   </div>
 </nav>
     );
