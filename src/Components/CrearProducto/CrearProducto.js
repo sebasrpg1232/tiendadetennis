@@ -44,15 +44,15 @@ const handleClick = (evt) => {
       }
     return (
       <div class="vh-100" style={{backgroundColor: "#eee"}}>
-      <form class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-12 col-xl-11">
-        <div class="card text-black" style={{borderRadius: "25px"}}>
+      <form class="container h-100" >
+      <div class="row d-flex justify-content-center align-items-center h-100" >
+      <div class="col-lg-12 col-xl-11" >
+        <div class="card text-white bg-dark" style={{borderRadius: "25px"}}>
           <div class="card-body p-md-5">
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crear Producto</p>
-        <div class="input-group flex-nowrap">
+              <p class="text-center h1 fw-bold mb-3 mx-1 mx-md-4 mt-4">Crear Producto</p>
+        <div class="input-group flex-nowrap mb-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Nombre de la Referencia
           </span>
@@ -69,7 +69,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[0]}</span>}
           </div>
-        <div class="input-group flex-nowrap">
+        <div class="input-group flex-nowrap mb-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Color del Tenis
           </span>
@@ -86,7 +86,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[1]}</span>}
           </div>
-        <div class="input-group flex-nowrap">
+        <div class="input-group flex-nowrap mb-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Talla del tenis
           </span>
@@ -103,7 +103,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[2]}</span>}
           </div>
-        <div class="input-group flex-nowrap">
+        <div class="input-group flex-nowrap mb-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Precio del tenis
           </span>
@@ -120,7 +120,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[3]}</span>}
           </div>
-        <button type="button" onClick={handleClick} class="btn btn-dark">Guardar</button>
+        <button type="button" onClick={handleClick} class="btn btn-light">Guardar</button>
         </div>
         </div>
         </div>
