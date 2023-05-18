@@ -1,6 +1,10 @@
+import Cards from "../Cards/Cards"
+
 function Home(){
     return(
-        <p>Hola</p>
+        <div>
+            <Cards></Cards>
+        </div>
     )
 }
 export default Home
