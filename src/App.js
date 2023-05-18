@@ -5,7 +5,6 @@ import CrearProducto from "./Components/CrearProducto/CrearProducto";
 import VerTenis from "./Components/VerTenis/VerTenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ActualizarStock from "./Components/ActualizarStock/ActualizarStock"
-import Tarjetas from "./Components/Tarjetas/Tarjetas";
 function App() {
   return (
     <div className="App">
