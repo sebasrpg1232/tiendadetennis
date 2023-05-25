@@ -6,6 +6,9 @@ import VerTenis from "./Components/VerTenis/VerTenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ActualizarStock from "./Components/ActualizarStock/ActualizarStock"
 function App() {
+  // fetch('http://localhost:9000/api/product/list')
+  // .then(response => response.json())
+  // .then(data=> console.log(data));
   return (
     <div className="App">
       <nav>
