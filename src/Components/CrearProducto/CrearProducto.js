@@ -69,7 +69,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[0]}</span>}
           </div>
-        <div class="input-group flex-nowrap mb-2">
+        <div class="input-group flex-nowrap mb-2 mt-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Color del Tenis
           </span>
@@ -86,7 +86,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[1]}</span>}
           </div>
-        <div class="input-group flex-nowrap mb-2">
+        <div class="input-group flex-nowrap mb-2 mt-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Talla del tenis
           </span>
@@ -103,7 +103,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[2]}</span>}
           </div>
-        <div class="input-group flex-nowrap mb-2">
+        <div class="input-group flex-nowrap mb-2 mt-2">
           <span class="input-group-text" style={spanStyle} id="addon-wrapping">
             Precio del tenis
           </span>
@@ -120,7 +120,7 @@ const handleClick = (evt) => {
         <div>
           {validationMessages.length > 0 && <span class="badge bg-danger"> {validationMessages[3]}</span>}
           </div>
-        <button type="button" onClick={handleClick} class="btn btn-light">Guardar</button>
+        <button type="button" onClick={handleClick} class="btn btn-light mt-2">Guardar</button>
         </div>
         </div>
         </div>
