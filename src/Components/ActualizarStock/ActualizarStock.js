@@ -1,6 +1,4 @@
-const spanStyle = {
-  width: "15em",
-};
+
 function ActualizarStock() {
   return (
     <div class="vh-100" style={{ backgroundColor: "#eee" }}>
