@@ -1,19 +1,44 @@
-import Cards from "../Cards/Cards"
-import Tarjetas from "../Tarjetas/Tarjetas"
+import Cards from "../Cards/Cards";
+import axios from "axios";
+import { useState } from "react";
 
-function Home(){
-    return(
-        <div class="row">
-             <Cards
-             img="1"
-             titulo="Adidas Forum Exhibit Low"
-             precio="$450.000"/>
+function Home() {
+  const [resultado, setResultado] = useState([]);
+  const [sw, setSw] = useState(false);
+  const [referencia, setReferencia] = useState();
+  const [precio, setPrecio] = useState();
 
-             <Cards
-             img="1"
-             titulo="Adidas Forum Exhibit Low"
-             precio="$450.000"/>
-        </div>
-    )
+  async function handleClick (evt) {
+    evt.preventDefault();
+    await axios.get("http://localhost:3002/products").then((response) => {
+        console.log(response)
+      setResultado(response.data);
+    });
+    setSw(true);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick} class="btn">
+        <span class="material-symbols-outlined">refresh</span>
+      </button>
+
+      {sw != false &&
+        resultado.map((vm) => (
+          <div class="row">
+            {
+                <div>
+                <Cards
+              img={referencia}
+              titulo={referencia}
+              precio={precio}
+        />
+            </div>
+            
+            /**/}
+          </div>
+        ))}
+    </div>
+  );
 }
-export default Home
+export default Home;

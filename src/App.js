@@ -9,6 +9,8 @@ function App() {
   // fetch('http://localhost:9000/api/product/list')
   // .then(response => response.json())
   // .then(data=> console.log(data));
+  
+  
   return (
     <div className="App">
       <nav>
@@ -17,7 +19,9 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home/>}></Route> 
               <Route path="/CrearProducto" element={<CrearProducto/>}></Route>
-              <Route path="/VerTenis" element={<VerTenis/>}></Route>
+              <Route path="/VerTenis" element={<VerTenis
+              
+              />}></Route>
               <Route path="/ActualizarStock" element={<ActualizarStock/>}></Route>
             </Routes>
         </Router>
