@@ -23,6 +23,9 @@ function Menu() {
               <li class="nav-item">
                 <Link to="/ActualizarStock" class="nav-link">Actualizar Stock</Link>
               </li>
+              <li class="nav-item">
+                <Link to="/Login" class="nav-link"> Ingresar</Link>
+              </li>
             </ul>
           </div>
         </div>

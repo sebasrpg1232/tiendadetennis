@@ -128,7 +128,7 @@ const limpiarCampos = () => {
                       ></input>
                     </div>
                     <button
-                      type="submit"
+                      type="submit" 
                       class="btn btn-light"
                       onClick={createProduct}
                     >
