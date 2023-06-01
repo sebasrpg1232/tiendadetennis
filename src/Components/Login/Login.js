@@ -1,4 +1,37 @@
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
+
+
 function Login() {
+    const [resultado, setResultado] = useState([]);
+    const [correo, setCorreo] = useState("");
+    const [pass, setPass] = useState("");
+    const [sw, setSw] = useState(false);
+  
+    async function handleClick (evt){
+      evt.preventDefault();
+      await axios.get("http://localhost:3002/usuarios").then((response) => {
+        setResultado(response.data);
+      }).then(login())
+      
+    }
+    function login(){
+        setSw(false)
+        console.log(correo)
+        resultado.map((vm) => {
+            console.log(vm.correo)
+            if(vm.correo=== correo && vm.pass === pass){
+                setSw(true)
+            }
+    })
+    if(sw){
+        alert("Se ingreso")
+    }else{
+        alert("Correo/clave incorrecta")
+    }
+    }
+
     return (
         <div class="vh-100" style={{ backgroundColor: "#eee" }}>
             <form class="container h-100">
@@ -14,13 +47,17 @@ function Login() {
                                         <form>
 
                                             <div class="form-outline mb-4">
-                                                <input type="email" id="form2Example1" class="form-control" />
+                                                <input type="email" id="form2Example1" class="form-control"onChange={(event)=>{
+                          setCorreo(event.target.value)
+                        }} />
                                                 <label class="form-label mt-2" for="form2Example1">Dirección E-mail</label>
                                             </div>
 
 
                                             <div class="form-outline mb-4">
-                                                <input type="password" id="form2Example2" class="form-control" />
+                                                <input type="password" id="form2Example2" class="form-control" onChange={(event)=>{
+                          setPass(event.target.value)
+                        }}/>
                                                 <label class="form-label mt-2" for="form2Example2">Contraseña</label>
                                             </div>
 
@@ -41,11 +78,11 @@ function Login() {
                                             </div>
 
 
-                                            <button type="button" class="btn btn-light btn-block mb-4">Entrar</button>
+                                            <button type="submit" class="btn btn-light btn-block mb-4" onClick={handleClick} >Entrar</button>
 
 
                                             <div class="text-center">
-                                                <p>¿No tienes cuenta aún?  <a href="#!" class="text-light">Registrate</a></p>
+                                                <p>¿No tienes cuenta aún?  <Link to="/registrar">Regístrate</Link></p>
                                                 <p>otras opciones de inicio de sesión:</p>
                                                 
                                             </div>

@@ -6,6 +6,7 @@ import CrearProducto from "./Components/CrearProducto/CrearProducto";
 import VerTenis from "./Components/VerTenis/VerTenis";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ActualizarStock from "./Components/ActualizarStock/ActualizarStock"
+import RegistrarUsuario from "./Components/RegistrarUsuario/RegistrarUsuario";
 function App() {
   // fetch('http://localhost:9000/api/product/list')
   // .then(response => response.json())
@@ -22,7 +23,7 @@ function App() {
               <Route path="/CrearProducto" element={<CrearProducto/>}></Route>
               <Route path="/VerTenis" element={<VerTenis/>}></Route>
               <Route path="/Login" element= {<Login/>}></Route>
-      
+              <Route path="/registrar" element={<RegistrarUsuario/>}></Route>
               <Route path="/ActualizarStock" element={<ActualizarStock/>}></Route>
             </Routes>
         </Router>
